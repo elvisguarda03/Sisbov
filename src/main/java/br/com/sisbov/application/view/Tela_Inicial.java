@@ -49,7 +49,7 @@ public class Tela_Inicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        img_tela_inicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagem_tela_inicial.png"))); // NOI18N
+//        img_tela_inicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagem_tela_inicial.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

@@ -7,6 +7,6 @@ public interface BaseRepository<T> {
     T findById(Long id);
     List<T> findAll();
     boolean update(T obj);
-    void deleteById(Long id);
+    boolean deleteById(Long id);
     void delete(T obj);
 }

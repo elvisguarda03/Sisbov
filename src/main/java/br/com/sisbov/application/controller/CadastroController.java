@@ -1,8 +1,8 @@
 package br.com.sisbov.application.controller;
 
-import br.com.sisbov.domain.entity.Usuario;
 import br.com.sisbov.application.view.Tela_Login;
 import br.com.sisbov.application.view.Tela_de_Cadastro;
+import br.com.sisbov.domain.entity.Usuario;
 import br.com.sisbov.domain.repository.UsuarioRepository;
 import br.com.sisbov.infrastructure.repository.UsuarioJpaRepository;
 
@@ -27,10 +27,10 @@ public class CadastroController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.telaLogin.btn_cadastrar_usuario) {
-            disposeScreen(true, false);
+            disposeScreen(false, true);
         }
         else if (e.getSource() == this.telaCadastro.btn_cancelar_cadastroUsuario) {
-            disposeScreen(false, true);
+            disposeScreen(true, false);
         }
         else {
             var usuario = Usuario.builder()
@@ -40,7 +40,7 @@ public class CadastroController implements ActionListener {
             usuario.criptografarSenha();
             boolean isSave = usuarioRepository.save(usuario);
             if (isSave) {
-                disposeScreen(false, true);
+                disposeScreen(true, false);
                 JOptionPane.showMessageDialog(this.telaCadastro, "Usuário cadastrado com sucesso!");
             } else {
                 JOptionPane.showMessageDialog(this.telaCadastro, "Erro no cadastro do usuário!");

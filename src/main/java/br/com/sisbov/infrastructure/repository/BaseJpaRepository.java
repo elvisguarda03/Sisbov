@@ -75,15 +75,16 @@ public abstract class BaseJpaRepository<T> implements BaseRepository<T> {
 
     @Override
     @Transactional(rollbackOn = Exception.class)
-    public void deleteById(Long id) {
+    public boolean deleteById(Long id) {
         try {
             connect();
             entityManager.getTransaction().begin();
             entityManager.remove(entityManager.merge(entityManager.find(type, id)));
             entityManager.getTransaction().commit();
             entityManager.close();
+            return true;
         } catch (Exception ex) {
-            // ignoring
+            return false;
         }
     }
 

@@ -23,6 +23,5 @@ import javax.persistence.Entity;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TipoAnimal extends AbstractEntity {
-    private int codigo;
     private String nome;
 }

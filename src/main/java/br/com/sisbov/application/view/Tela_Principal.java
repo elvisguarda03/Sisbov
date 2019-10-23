@@ -58,9 +58,9 @@ public class Tela_Principal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tab_listar_TipoAnimais = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        txtTipoAnimalId = new javax.swing.JLabel();
         TXT_codigo_TipoAnimal = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        txtNomeTipoAnimal = new javax.swing.JLabel();
         c_nome_TipoAnimal = new javax.swing.JTextField();
         btn_salvar_TipoAnimal = new javax.swing.JButton();
         btn_cancelar_TipoAnimal = new javax.swing.JButton();
@@ -165,7 +165,7 @@ public class Tela_Principal extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Tipos de animais:"));
 
-        jLabel1.setText("Código:");
+        txtTipoAnimalId.setText("Código:");
 
         TXT_codigo_TipoAnimal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,12 +173,13 @@ public class Tela_Principal extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Nome:");
+        txtNomeTipoAnimal.setText("Nome:");
 
         btn_salvar_TipoAnimal.setText("Salvar");
         btn_salvar_TipoAnimal.setBorder(null);
 
         btn_cancelar_TipoAnimal.setText("Cancelar");
+        txt_tipo_animal.setEnabled(false);
 
         GroupLayout jPanel3Layout = new GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -188,11 +189,11 @@ public class Tela_Principal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(txtTipoAnimalId)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(TXT_codigo_TipoAnimal, GroupLayout.PREFERRED_SIZE, 110, GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(txtNomeTipoAnimal)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -206,12 +207,12 @@ public class Tela_Principal extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(txtTipoAnimalId)
                     .addComponent(TXT_codigo_TipoAnimal, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                     .addComponent(c_nome_TipoAnimal, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(txtNomeTipoAnimal))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_cancelar_TipoAnimal, GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
@@ -294,6 +295,7 @@ public class Tela_Principal extends javax.swing.JFrame {
 
         jLabel13.setText("Código:");
 
+        txt_codigo_raca.setEnabled(false);
         txt_codigo_raca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_codigo_racaActionPerformed(evt);
@@ -1018,27 +1020,27 @@ public class Tela_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField TXT_codigo_TipoAnimal;
-    private javax.swing.JButton btn_cancelar_TipoAnimal;
-    private javax.swing.JButton btn_cancelar_animal;
-    private javax.swing.JButton btn_cancelar_raca;
-    private javax.swing.JButton btn_cancelar_vacinas;
-    private javax.swing.JButton btn_editar_TipoAnimal;
-    private javax.swing.JButton btn_editar_animal;
-    private javax.swing.JButton btn_editar_raca;
-    private javax.swing.JButton btn_editar_vacinas;
-    private javax.swing.JButton btn_excluir_TipoAnimal;
-    private javax.swing.JButton btn_excluir_animal;
-    private javax.swing.JButton btn_excluir_raca;
-    private javax.swing.JButton btn_excluir_vacinas;
-    private javax.swing.JButton btn_novo_TipoAnimal;
-    private javax.swing.JButton btn_novo_animal;
-    private javax.swing.JButton btn_novo_raca;
-    private javax.swing.JButton btn_novo_vacinas;
-    private javax.swing.JButton btn_salvar_TipoAnimal;
-    private javax.swing.JButton btn_salvar_animal;
-    private javax.swing.JButton btn_salvar_raca;
-    private javax.swing.JButton btn_salvar_vacinas;
+    public javax.swing.JTextField TXT_codigo_TipoAnimal;
+    public javax.swing.JButton btn_cancelar_TipoAnimal;
+    public javax.swing.JButton btn_cancelar_animal;
+    public javax.swing.JButton btn_cancelar_raca;
+    public javax.swing.JButton btn_cancelar_vacinas;
+    public javax.swing.JButton btn_editar_TipoAnimal;
+    public javax.swing.JButton btn_editar_animal;
+    public javax.swing.JButton btn_editar_raca;
+    public javax.swing.JButton btn_editar_vacinas;
+    public javax.swing.JButton btn_excluir_TipoAnimal;
+    public javax.swing.JButton btn_excluir_animal;
+    public javax.swing.JButton btn_excluir_raca;
+    public javax.swing.JButton btn_excluir_vacinas;
+    public javax.swing.JButton btn_novo_TipoAnimal;
+    public javax.swing.JButton btn_novo_animal;
+    public javax.swing.JButton btn_novo_raca;
+    public javax.swing.JButton btn_novo_vacinas;
+    public javax.swing.JButton btn_salvar_TipoAnimal;
+    public javax.swing.JButton btn_salvar_animal;
+    public javax.swing.JButton btn_salvar_raca;
+    public javax.swing.JButton btn_salvar_vacinas;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
@@ -1046,13 +1048,13 @@ public class Tela_Principal extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup5;
     private javax.swing.ButtonGroup buttonGroup6;
     private javax.swing.ButtonGroup buttonGroup7;
-    private javax.swing.JTextField c_nome_TipoAnimal;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JTextField c_nome_TipoAnimal;
+    public javax.swing.JButton jButton17;
+    public javax.swing.JButton jButton18;
+    public javax.swing.JButton jButton19;
+    public javax.swing.JButton jButton20;
+    public javax.swing.JButton jButton21;
+    private javax.swing.JLabel txtTipoAnimalId;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1062,7 +1064,7 @@ public class Tela_Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel txtNomeTipoAnimal;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1070,44 +1072,44 @@ public class Tela_Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTable tab_lista_animais;
-    private javax.swing.JTable tab_listar_TipoAnimais;
-    private javax.swing.JTable tab_listar_raca;
-    private javax.swing.JTable tab_listar_vacinas;
-    private javax.swing.JTextField txt_brinco_animal;
-    private javax.swing.JTextField txt_codigo_raca;
-    private javax.swing.JTextField txt_codigo_vacinas;
-    private javax.swing.JTextField txt_dataNasc_animal;
-    private javax.swing.JTextField txt_fazenda_animal;
-    private javax.swing.JTextField txt_nome_raca;
-    private javax.swing.JTextField txt_nome_vacinas;
-    private javax.swing.JTextField txt_peso_animal;
-    private javax.swing.JTextField txt_raca_animal;
-    private javax.swing.JTextField txt_sexo_animal;
-    private javax.swing.JTextField txt_tipo_animal;
-    private javax.swing.JTextField txt_vacina_animal;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel10;
+    public javax.swing.JPanel jPanel11;
+    public javax.swing.JPanel jPanel12;
+    public javax.swing.JPanel jPanel13;
+    public javax.swing.JPanel jPanel14;
+    public javax.swing.JPanel jPanel2;
+    public javax.swing.JPanel jPanel3;
+    public javax.swing.JPanel jPanel4;
+    public javax.swing.JPanel jPanel5;
+    public javax.swing.JPanel jPanel6;
+    public javax.swing.JPanel jPanel7;
+    public javax.swing.JPanel jPanel8;
+    public javax.swing.JPanel jPanel9;
+    public javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JScrollPane jScrollPane4;
+    public javax.swing.JScrollPane jScrollPane5;
+    public javax.swing.JTabbedPane jTabbedPane1;
+    public javax.swing.JTable jTable4;
+    public javax.swing.JTextField jTextField5;
+    public javax.swing.JTextField jTextField6;
+    public javax.swing.JTable tab_lista_animais;
+    public javax.swing.JTable tab_listar_TipoAnimais;
+    public javax.swing.JTable tab_listar_raca;
+    public javax.swing.JTable tab_listar_vacinas;
+    public javax.swing.JTextField txt_brinco_animal;
+    public javax.swing.JTextField txt_codigo_raca;
+    public javax.swing.JTextField txt_dataNasc_animal;
+    public javax.swing.JTextField txt_codigo_vacinas;
+    public javax.swing.JTextField txt_fazenda_animal;
+    public javax.swing.JTextField txt_nome_raca;
+    public javax.swing.JTextField txt_nome_vacinas;
+    public javax.swing.JTextField txt_peso_animal;
+    public javax.swing.JTextField txt_raca_animal;
+    public javax.swing.JTextField txt_sexo_animal;
+    public javax.swing.JTextField txt_tipo_animal;
+    public javax.swing.JTextField txt_vacina_animal;
     // End of variables declaration//GEN-END:variables
 }

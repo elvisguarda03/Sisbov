@@ -13,6 +13,10 @@ public class UsuarioJpaRepository extends BaseJpaRepository<Usuario> implements 
 
     public Optional<Usuario> findByUsername(String username) {
         connect();
-        return super.entityManager.createQuery("FROM Usuario u WHERE u.username = :name").setParameter("name", username).getResultList().stream().findFirst();
+        return super.entityManager.createQuery("FROM Usuario u WHERE u.username = :name")
+                .setParameter("name", username)
+                .getResultList()
+                .stream()
+                .findFirst();
     }
 }
